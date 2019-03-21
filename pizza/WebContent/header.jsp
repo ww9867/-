@@ -2,5 +2,5 @@
     pageEncoding="UTF-8"%>
 
     <header>
-        <h1>피자전문점 판매관린 프로그램 ver1.0</h1>
+        <h1>피자전문점 판매관련 프로그램 ver1.0</h1>
     </header>

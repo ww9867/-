@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<jsp:include page="header.jsp"/>
+<jsp:include page="nav.jsp"/>
 <section>
         <h3>매출전표등록</h3>
        <table>
@@ -45,3 +46,4 @@
            </tr>
        </table>
     </section>
+    <jsp:include page="footer.jsp"/>

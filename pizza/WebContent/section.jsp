@@ -2,24 +2,28 @@
     pageEncoding="UTF-8"%>
 <jsp:include page="header.jsp"/>
 <jsp:include page="nav.jsp"/>
-<section>
+
+<script src="index.js"></script>
+<section>  	
         <h3>매출전표등록</h3>
+       <form name="fr" onsubmit="return asd()"> 
        <table>
+       	
            <thead>
-           <col width="30%">
-           <col width="70%">
+           		<col width="30%">
+           		<col width="70%">
            </thead>
            <tr>
                <td>매출전표번호</td>
-               <th><input type="text" class="text"> </th>
+               <th><input type="text" class="text" name="not_next_1" > </th>
            </tr>
            <tr>
                <td>지점코드</td>
-               <th><input type="text"class="text"> </th>
+               <th><input type="text"class="text" name="not_next_2" > </th>
            </tr>
            <tr>
                <td>판매일자</td>
-               <th><input type="text"class="text"> </th>
+               <th><input type="text"class="text" name="not_next_3" > </th>
            </tr>
            <tr>
                <td>피자코드</td>
@@ -38,12 +42,16 @@
            </tr>
            <tr>
                <td>판매수량</td>
-               <th><input type="text" class="text"> </th>
+               <th><input type="text" class="text" name="not_next_4"> </th>
            </tr>
            <tr>
-               <td colspan="2"><input type="button"value="전표등록" class="btn"><input type="button"value="다시쓰기"class="btn"></td>
+               <td colspan="2">
+               <input type="button"value="전표등록" id ="submit"class="btn" onclick="nullChk()">
+               <input type="button"value="다시쓰기"class="btn"></td>
 
            </tr>
+          
        </table>
+ 		</form>
     </section>
-    <jsp:include page="footer.jsp"/>
+<jsp:include page="footer.jsp"/>
